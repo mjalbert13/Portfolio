@@ -1,6 +1,8 @@
 body {
     color: #777777;
     font-family: Arial, Helvetica, sans-serif; 
+    background-image: url(../images/folk-pattern.png) ;
+    
 }
 header {
     background: #ffffff;
@@ -11,9 +13,10 @@ header {
 #Name {
     background: #4aaaa5;
     color: #cccccc;
-    padding: 10px;
+    padding: 0px;
     width: 200px;
     float: left;
+    text-align: center;
 }
 
 ul {
@@ -27,7 +30,7 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
     width: 60px;
     color: #777777;
     padding: 5px;
@@ -38,23 +41,25 @@ li a {
     clear: both;
 }
 
-.background {
-    
-}
 .content {
     background: #ffffff;
     border: 2px solid #dddddd; 
     width: 960px;
+    position: relative;
+    left: 12%;
+    margin: 25px;
+    overflow: auto;
 }
 
 #Profile {
    float: left;
    padding: 10px;
+   margin: 10px;
 }
 
 p {
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 footer {
     background: #666666;
@@ -72,6 +77,22 @@ h2 {
 
 .imgbox {
     float: left;
+    width: 200px;
     padding: 10px;
     margin: 20px;
+    z-index: 1;
+}
+
+.imgbox h4 {
+    color: #dddddd;
+    background: #4aaaa5;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+}
+
+form {
+    margin: 10px;
+    padding: 5px;
 }
