@@ -6,7 +6,7 @@
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,15 +21,19 @@
         </ul>
     </header>
     <div class="clear"></div>
-    <div class="content">
+    <div class='content'>
         <h2>
             Contact
         </h2>
         <form action="server1.php">
-           Name:<br> <input type="text" name="Name" value="John Smith"><br>
-           Email: <br> <input type="text" name="Email" value="example@gmail.com"><br>
-           Message:<br> <textarea rows="10" cols="50%"></textarea><br>
-           <input type="submit" value="Submit">
+            <label for="name">Name</label>
+            <input type="text" name="Name" value="John Smith">
+            <label for="Email">Email</label>
+            <input type="text" name="Email" value="example@gmail.com">
+            <label for="Message">Message</label>
+            <br>
+            <textarea rows="10" cols="50%"></textarea><br>
+           <input id="submit" type="submit" value="Submit">
         </form>
     </div>
     <div class="clear"></div>
