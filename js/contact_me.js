@@ -1,3 +1,15 @@
+var mysql = require('mysql');
+
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user:"root",
+  password: "603Concord!",
+  database: "profile_emailDB"
+})
+
+
+
 $(function() {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -20,7 +32,7 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: connection,
         type: "POST",
         data: {
           name: name,
